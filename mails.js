@@ -1,3 +1,4 @@
+const port = process.env.PORT || 3000
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -72,6 +73,6 @@ app.get('/sendEmail', cors(), (req, res, next) => {
     res.send('Email sent!');
 })
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log('Mail server running on port 3000!');
 });
