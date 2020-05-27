@@ -1,0 +1,35 @@
+{
+  "name": "main-server",
+  "version": "1.0.0",
+  "description": "server for even",
+  "main": "mails.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node mails.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/even-team/main-server.git"
+  },
+  "keywords": [
+    "server",
+    "even",
+    "main",
+    "mail",
+    "node"
+  ],
+  "author": "Joaquin Umpierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/even-team/main-server/issues"
+  },
+  "homepage": "https://gitlab.com/even-team/main-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "googleapis": "^51.0.0",
+    "nodemailer": "^6.4.6"
+  }
+}
