@@ -20,7 +20,7 @@ const oauth_secret = 'IQsspdml8onLa6SGF3GG0uo-';
 const refresh_token = '1//04k2ywuSyQTl3CgYIARAAGAQSNwF-L9IraqM_-wk-gN3-SfvGw2HQdS5cvzUwtGsXH2SRVcHorQXELJXYQ2-AH3HalDOEVhpMXA0';
 const destination_email = 'info@even.la'
 
-app.use(cors());
+app.use(cors({origin: '*'}));
 
 app.get('/sendEmail', cors(), (req, res, next) => {
     console.log(req.body)
